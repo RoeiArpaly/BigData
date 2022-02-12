@@ -28,11 +28,11 @@ def merge_small_files(input_data, min_chunk_size=32, max_chunk_size=64, time_lim
     -----------
     input_data: list of csv files paths.
 
-    chunk_size: int, default=64
+    min_chunk_size, max_chunk_size: int, default=64
         The maximal size (in MegaBytes) of each chunk.
 
     time_limit: int, default=10
-        The maximal time a file will have to wait in order to be sent in a small chunk size.
+        The maximal time (in minutes) a file will have to wait in order to be sent in a small chunk size.
 
     """
 
